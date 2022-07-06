@@ -26,7 +26,11 @@ class OrderController extends Controller
     }
     //service checkout
     public function checkout_save(Request $request)
-    {
+    {   
+        //The best practice is to use transactions
+
+
+
          $service_id = $request->input('serviceid');
          $service = Service::find($service_id);
          $amount=$service->price*$request->qty;
