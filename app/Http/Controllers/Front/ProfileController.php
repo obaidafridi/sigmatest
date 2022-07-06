@@ -21,7 +21,7 @@ class ProfileController extends Controller
     //update profile
     public function updateProfile(Request $request)
     {
-        // try {
+        try {
                 $request->validate([
                     'name' => ['required', 'string', 'max:255'],
                     'email' => ['required', 'string', 'email', 'max:255',  Rule::unique('users')->ignore(Auth::user()->id)],
@@ -35,9 +35,9 @@ class ProfileController extends Controller
                 ]);
                 toastSuccess('Profile successfully Updated!');
                 return Redirect::back();
-        // } catch (\Exception $exception) {
-        //         toastError('Something went wrong, try again!');
-        //         return Redirect::back();
-        // }
+        } catch (\Exception $exception) {
+                toastError('Something went wrong, try again!');
+                return Redirect::back();
+        }
     }
 }

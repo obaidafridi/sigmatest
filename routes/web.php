@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\ServiceController;
+use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Front\HomeController;
 use App\Http\Controllers\Front\ProfileController;
 use App\Http\Controllers\Front\OrderController;
@@ -28,7 +29,7 @@ Route::group(['middleware' => ['auth']], function () {
 //Admin Routes here
 
 Route::group(['middleware' => ['auth','admin'],'prefix' => 'admin'], function () {
-  Route::get('dashboard', [ServiceController::class, 'dashboard'])->name('admin.dashboard');
+  Route::get('dashboard', [DashboardController::class, 'dashboard'])->name('admin.dashboard');
   Route::get('service/orders',[ServiceController::class, 'service_orders'])->name('service.orders');
   Route::resources([
     'service' => ServiceController::class, //Service

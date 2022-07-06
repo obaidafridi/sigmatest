@@ -23,16 +23,6 @@ class ServiceController extends Controller
         return view('backend.service', compact('service'));
     }
 
-    public function dashboard()
-    {
-        $service = Service::count();
-        $serviceorder=ServiceOrder::with('service')->whereHas('service', function ($query) {
-            $query->where('user_id', '=', Auth::user()->id);
-          })->count();
-        return view('backend.dashboard',compact('service','serviceorder'));
-    }
-
-    
     public function create()
     {
         //
@@ -114,9 +104,14 @@ class ServiceController extends Controller
 
     public function service_orders()
     {
-         $serviceorder=ServiceOrder::with('service')->whereHas('service', function ($query) {
-            $query->where('user_id', '=', Auth::user()->id);
-          })->get();
-         return view('backend.serviceorder',compact('serviceorder'));
+        try{
+             $serviceorder=ServiceOrder::with('service')->whereHas('service', function ($query) {
+                $query->where('user_id', '=', Auth::user()->id);
+              })->get();
+             return view('backend.serviceorder',compact('serviceorder'));
+          } catch (\Exception $exception) {
+               toastError('Something went wrong, try again!');
+               return Redirect::back();
+          }
     }
 }
