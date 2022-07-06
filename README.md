@@ -1,7 +1,7 @@
-(1) Extract zip file in htdocs folder
-(2) create database in phpmyadmin with the name of vehicle
+
+(1) create database having name is sigmatest
 (2) run command composer install
-(4)run command php artisan serve and copy the link and pase it in your browser
+(3)run command php artisan serve and copy the link and pase it in your browser
 
 
 admin credentials
