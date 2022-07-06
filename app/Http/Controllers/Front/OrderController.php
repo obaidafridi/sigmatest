@@ -47,16 +47,7 @@ class OrderController extends Controller
                 $serviceorder->user_id=Auth::user()->id;
                 $serviceorder->service_id=$service->id;
                 $serviceorder->payment_status=1;
-                if($serviceorder->save())
-                {
-                    toastSuccess('Thank you for your order!!');
-                    return redirect('thankyou')->with( ['serive' => $service]);
-                }
-                else{
-                    toastError('Something Went Wrong');
-                    return view('frontend.services.thankyou')->with('booking', $service);
-                }
-
+                $serviceorder->save();
              }
             
         } catch (\Exception $exception) {
