@@ -6,7 +6,9 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\ServiceOrder;
 use App\Models\Service;
+use Stripe;
 use Auth;
+use DB;
 class OrderController extends Controller
 {
     public function index()
@@ -44,6 +46,7 @@ class OrderController extends Controller
                 $serviceorder->total=$service->price*$request->qty;
                 $serviceorder->user_id=Auth::user()->id;
                 $serviceorder->service_id=$service->id;
+                $serviceorder->payment_status=1;
                 if($serviceorder->save())
                 {
                     toastSuccess('Thank you for your order!!');

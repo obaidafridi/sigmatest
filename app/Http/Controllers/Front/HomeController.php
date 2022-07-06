@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 use App\Models\Service;
 use App\Models\ServiceOrder;
 use DB;
-use Stripe;
 use Auth;
 
 class HomeController extends Controller

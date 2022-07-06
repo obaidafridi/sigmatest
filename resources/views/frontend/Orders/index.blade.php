@@ -18,6 +18,7 @@
                                 <th>Price</th>
                                 <th>Qty</th>
                                 <th>Total</th>
+                                <th>Pyment Status</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -28,6 +29,7 @@
                                 <td>${{$order->price}}</td>
                                 <td>${{$order->qty}}</td>
                                 <td>${{$order->total}}</td>
+                                <td>{{$order->payment_status==1?'Paid':'Pending'}}</td>
                             </tr>
                             @endforeach
                         </tbody>

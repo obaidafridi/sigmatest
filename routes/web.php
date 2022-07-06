@@ -7,12 +7,12 @@ use App\Http\Controllers\Front\HomeController;
 use App\Http\Controllers\Front\ProfileController;
 use App\Http\Controllers\Front\OrderController;
 
-
+//thank you route when order is created
 Route::get('/thankyou', function () {
      return view('frontend.services.thankyou');
 });
 
- 
+ //custoemr user routes
 Route::group(['middleware' => ['auth']], function () {
     Route::get('/', [HomeController::class, 'home'])->name('home');
     Route::get('profile',[ProfileController::class,'profile'])->name('user.profile');
@@ -20,14 +20,9 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('myorders',[OrderController::class,'index'])->name('user.order');
     Route::get('/service/checkout/{id}', [OrderController::class, 'checkout']);
     Route::post('/service/checkout',[OrderController::class, 'checkout_save'])->name('submit.service');
-    
-
-    
- 
 });
 
 //Admin Routes here
-
 Route::group(['middleware' => ['auth','admin'],'prefix' => 'admin'], function () {
   Route::get('dashboard', [DashboardController::class, 'dashboard'])->name('admin.dashboard');
   Route::get('service/orders',[ServiceController::class, 'service_orders'])->name('service.orders');

@@ -33,6 +33,7 @@
                                 <th class="min-w-100px">price</th>
                                 <th class="min-w-100px">qty</th>
                                 <th class="min-w-100px">Total</th>
+                                <th class="min-w-100px">Payment Status</th>
                                 <th class="min-w-100px">Image</th>
                                 <th class="min-w-100px">Actions</th>
                             </tr>
@@ -50,6 +51,7 @@
                                 <td>${{$order->price}}</td>
                                 <td>{{$order->qty}}</td>
                                 <td>${{$order->qty*$order->price}}</td>
+                                <td>{{$order->payment_status ==1 ?'Paid':'Pending'}}</td>
                                 <td><img src="{{asset($order->service->image)}}" width="60px" height="60px" /></td>
                                 <td class="">
                                     
