@@ -20,9 +20,10 @@ class CreateServiceOrdersTable extends Migration
             $table->integer('total');
             $table->foreign('service_id')->references('id')->on('services');
             $table->unsignedBigInteger('service_id')->nullable();
-
             $table->foreign('user_id')->references('id')->on('users');
             $table->unsignedBigInteger('user_id')->nullable();
+            $table->tinyinteger('order_status')->default(0);
+            $table->tinyinteger('payment_status')->default(0);
             $table->timestamps();
         });
     }

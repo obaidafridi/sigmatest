@@ -13,12 +13,15 @@ Route::get('/thankyou', function () {
 
  
 Route::group(['middleware' => ['auth']], function () {
-    Route::get('/service/checkout/{id}', [HomeController::class, 'checkout']);
-    Route::post('/service/checkout',[HomeController::class, 'checkout_save'])->name('submit.service');
     Route::get('/', [HomeController::class, 'home'])->name('home');
+    Route::get('profile',[ProfileController::class,'profile'])->name('user.profile');
+    Route::post('profile/update',[ProfileController::class,'updateProfile'])->name('profile.update');
+    Route::get('myorders',[OrderController::class,'index'])->name('user.order');
+    Route::get('/service/checkout/{id}', [OrderController::class, 'checkout']);
+    Route::post('/service/checkout',[OrderController::class, 'checkout_save'])->name('submit.service');
+    
 
-    Route::get('/profile',[ProfileController::class,'profile'])->name('user.profile');
-    Route::get('/myorders',[OrderController::class,'index'])->name('user.order');
+    
  
 });
 

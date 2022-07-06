@@ -25,7 +25,7 @@
                       </button>
                       <ul class="dropdown-menu">
                         <li><a class="menu-link px-5" href="{{url('profile')}}">Profile</a></li>
-                        <li><a class="menu-link px-5" href="{{'myorders'}}">Orders</a></li>
+                        <li><a class="menu-link px-5" href="{{url('myorders')}}">Orders</a></li>
                         <li>
                             <a class="menu-link px-5" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
