@@ -2,19 +2,20 @@
     @extends('layouts.Front.master-front')
     @section('styles')
     <style>
-       
+      
     </style>
     @endsection
     @section('content')
     <main class="pageWrapper">
-        <div class="topSpecialities">
+        <div class="">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h3 class="commonTitle">Checkout</h3>
+                    <div class="col-lg-12 text-center heading3">
+                        <h3 class="commonTitle" style="background:black;color:white;padding:31px">Checkout</h3>
                     </div>
                 </div>
-                <div class="row ">
+                <br>
+                <div class="row mt-20">
                      <div class="col-lg-12 text-center">
                         <div class="mt-10 text-center">
                             <div class="commonBox">
