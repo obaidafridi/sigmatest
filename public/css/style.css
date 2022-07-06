@@ -1,0 +1,1549 @@
+:root {
+    --commonColor: #1678F2;
+    --whiteColor: #fff;
+    --grayColor: #717F8E;
+    --ratingColor: #FFB800;
+}
+.commonButton{
+    background: #1678F2;
+    border-radius: 4px;
+    padding: 15px 18px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+a,
+span {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Sora', sans-serif;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+body {
+    font-family: 'Sora', sans-serif;
+}
+
+input,
+select {
+    border: 1px solid #C4C4C4;
+    border-radius: 6px;
+}
+
+.commonTitle {
+    font-size: 30px;
+    font-weight: 700;
+}
+.container-fluid{
+    padding: 0px 50px;
+}
+
+/********* Header - CSS ****************/
+header{
+    padding: 0px 50px;
+    position: relative;
+    z-index: 99999;
+}
+header .navbar-nav {
+    margin-left: 57px;
+}
+
+header .navbar-nav li {
+    margin-right: 40px;
+}
+
+header .navbar-nav li a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #6C87AE !important;
+
+}
+
+header .navbar-nav li.active a {
+    color: #3A8EF6 !important;
+}
+
+header .authBtnDiv {
+    display: flex;
+    align-items: center;
+}
+
+header .authBtnDiv a {
+    display: block;
+    padding: 10px 25px;
+   /* margin-left: 25px;*/
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 4px;
+}
+
+header .authBtnDiv a.login__Register-Btn {
+    color: var(--commonColor) !important;
+    border: 1px solid var(--commonColor);
+}
+
+header .authBtnDiv a.apply__Doctor-Btn {
+    background-color: var(--commonColor);
+    color: var(--whiteColor);
+}
+.hoverDoctor{
+    background-color: transparent !important;
+    color: var(--commonColor) !important;
+    border: 1px solid var(--commonColor);
+
+}
+.dropdown-menu{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    border-bottom: 4px solid #1678f2;
+}
+/****************** Main - Banner - CSS **********/
+.mainHeroSection {
+    position: relative;
+    background: #f1f9fd;
+    top: -100px;
+}
+
+.mainHeroSection .searchDiv {
+    width: 100%;
+    max-width: 83%;
+    margin-left: 35px;
+    position: absolute;
+    bottom: -60px;
+}
+
+.mainHeroSection .bannerLeftDiv {
+    padding: 300px 30px 200px;
+}
+
+.mainHeroSection .bannerLeftDiv h5 {
+    color: var(--commonColor);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    margin-bottom: 20px;
+}
+
+.mainHeroSection .bannerLeftDiv h1 {
+    font-size: 58px;
+    color: #252B42;
+    font-weight: 700;
+    line-height: 65px;
+    letter-spacing: 0.2px;
+    margin-bottom: 20px;
+}
+
+.mainHeroSection .bannerLeftDiv h4 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.mainHeroSection .bannerRightDiv {
+    padding: 150px 0px 60px;
+}
+
+.tabDiv .findDoctorBox {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 30px;
+    background: var(--whiteColor);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+}
+
+.tabDiv .findDoctorBox .inputDiv {
+    width: 20%;
+    text-align: center;
+}
+
+.tabDiv .findDoctorBox .inputDiv input,
+.tabDiv .findDoctorBox .inputDiv select {
+    padding: 10px 10px !important;
+    width: 90% !important;
+    color: #7D7D7D;
+    font-weight: 300;
+    font-family: 'Sora', sans-serif;
+    font-size: 14px;
+}
+
+.tabDiv .findDoctorBox .inputDiv button {
+    background: var(--commonColor);
+    padding: 7px 44px;
+    color: var(--whiteColor);
+    border: none;
+    border-radius: 6px;
+}
+
+.pillsDiv .nav-pills li a {
+    display: block;
+    padding: 10px 55px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 10px 10px 0px 0px;
+    background: #F1F9FD;
+    border: 1px solid #C4C4C4;
+    color: #000000;
+}
+
+.pillsDiv .nav-pills li a img {
+    margin-right: 8px;
+}
+
+.pillsDiv .nav-pills li a.active {
+    background-color: var(--commonColor);
+    color: var(--whiteColor);
+    border-color: var(--commonColor);
+}
+
+/************* Top - Specialities - CSS **********/
+.topSpecialities {
+    padding: 120px 30px;
+    background: var(--whiteColor);
+}
+
+.topSpecialities .multiSpecialities {
+    margin-top: 70px !important;
+    display: flex;
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+}
+
+.topSpecialities .multiSpecialities .commonBox {
+    width: 20%;
+    text-align: center;
+}
+
+.topSpecialities .multiSpecialities .commonBox .imgBox {
+    width: 117px;
+    height: 117px;
+    background: var(--whiteColor);
+    box-shadow: 0px 0px 4px rgb(0 0 0 / 25%);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+.topSpecialities .multiSpecialities .commonBox p {
+    font-size: 20px;
+    color: #000000;
+    margin-top: 35px;
+    font-weight: 400;
+}
+
+/***************** Top - Reated - Doctor - CSS ******/
+.topReatedDoctor {
+    padding: 80px 0px;
+    background: #F9FBFC;
+}
+
+.topReatedDoctor .mainContentHeader h2 {
+    font-size: 16px;
+    color: #65677B;
+    margin: 20px 0px;
+}
+
+.topReatedDoctor .mainContentHeader p {
+    color: #5B67CA;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.topReatedDoctor .multiDoctorDiv {
+    margin-top: 90px !important;
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+
+}
+
+.topReatedDoctor .multiDoctorDiv .doctorCard {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgb(0 0 0 / 25%);
+    border-radius: 6px;
+    text-align: center;
+    padding: 70px 40px 20px;
+    border-bottom: 3px solid var(--commonColor);
+    margin-bottom: 80px;
+}
+
+.topReatedDoctor .multiDoctorDiv .doctorCard img {
+    position: absolute;
+    top: -40px;
+    left: 40%;
+}
+
+.topReatedDoctor .multiDoctorDiv .doctorCard .doctorSpecialities {
+    margin: 25px 0px;
+}
+
+.topReatedDoctor .multiDoctorDiv .doctorCard .cardBody p {
+    color: #12175E;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.topReatedDoctor .multiDoctorDiv .doctorCard .cardBody span {
+    background: rgba(101, 168, 251, 0.2);
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.topReatedDoctor .multiDoctorDiv .doctorCard .cardBody .doctorSpecialities p {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.4);
+    margin: 0px;
+}
+
+.topReatedDoctor .multiDoctorDiv .doctorCard .cardBody .doctorSpecialities p.rating {
+    color: #FFB800;
+}
+
+.topReatedDoctor .multiDoctorDiv .doctorCard .cardBody .doctorSpecialities p span {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 16px;
+    background: transparent;
+}
+
+.topReatedDoctor .multiDoctorDiv .doctorCard .cardBody .doctorDetail p {
+    font-size: 16px;
+    color: #65677B;
+    font-weight: 400;
+}
+
+/********** Award - Div - CSS ************/
+.awardDiv {
+    background-color: var(--commonColor);
+
+}
+
+.awardDiv .multiAward {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+    padding: 54px 0px;
+}
+
+.awardDiv .multiAward .awardBox {
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.awardDiv .multiAward .awardBox img {
+    margin-right: 34px;
+}
+
+.awardDiv .multiAward .awardBox h5 {
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--whiteColor);
+}
+
+.awardDiv .multiAward .awardBox p {
+    font-weight: 500;
+    color: var(--whiteColor);
+    font-size: 16px;
+}
+
+/********** Medical - Expert - CSS **********/
+.medicalExpert {
+    padding: 90px 0px 50px;
+    background-color: var(--whiteColor);
+}
+
+.medicalExpert .medicalRightDiv {
+    padding: 70px 50px;
+}
+
+.medicalExpert .medicalRightDiv h3 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+}
+
+.medicalExpert .medicalRightDiv p {
+    margin: 16px 0px 32px;
+    font-size: 16px;
+    color: #6C87AE;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.medicalExpert .medicalRightDiv a {
+    padding: 16px 28px;
+    background: var(--commonColor);
+    border-radius: 8px;
+    color: var(--whiteColor);
+}
+.medicalExpert .imgDiv{
+    position: relative;
+}
+.medicalExpert .imgDiv .qualityOurQuantity{
+    position: absolute;
+    bottom: 24%;
+    right: -30px;
+    background: var(--whiteColor);
+    background: var(--whiteColor);
+    box-shadow: 0px 12px 32px rgb(63 128 240 / 8%);
+    border-radius: 8px;
+    display: flex;
+    padding: 2px 16px;
+    align-items: center;
+}
+.medicalExpert .imgDiv .qualityOurQuantity .textDiv p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.medicalExpert .imgDiv .qualityOurQuantity .textDiv{
+    text-align: left;
+}
+.medicalExpert .imgDiv .qualityOurQuantity .textDiv i{
+    color: #FFC107;
+}
+/************ Patients - FeedBack - CSS *********/
+.patientFeedBack{
+    padding: 70px 0px;
+}
+.slick-dots li button:before{
+    content: "" !important;
+    width: 12px !important;
+    height: 12px !important;
+    background-color:  var(--commonColor) !important;
+    border-radius: 100%;
+}
+.slick-dots li button{
+    width: 12px !important;
+    height: 12px !important;
+}
+.patientFeedBack p{
+    margin-top: 20px;
+    color: #65677B;
+    font-size: 18px;
+}
+.patientFeedBack .patientsSlider{
+    margin-top: 80px !important;
+    width: 100%;
+    max-width: 95%;
+    margin: auto;
+}
+.patientFeedBack .patientsSlider .patientsBox{
+    background: #FFFFFF;
+    box-shadow: 3.17839px 5.29732px 21.1893px rgb(0 0 0 / 15%);
+    padding: 50px;
+    width: 33%;
+    position: relative;
+    margin: 30px 10px;
+}
+.patientFeedBack .patientsSlider .patientsBox .profileDiv{
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+}
+.patientFeedBack .patientsSlider .patientsBox .quoteImg{
+    position: absolute;
+    top: -25px;
+    left: 42%;
+}
+.patientFeedBack .patientsSlider .patientsBox .profileDetail{
+    margin-left: 30px;
+}
+.patientFeedBack .patientsSlider .patientsBox .profileDiv img{
+    width: 63px;
+}
+.patientFeedBack .patientsSlider .patientsBox .profileDiv h4{
+    font-size: 20px;
+}
+.patientFeedBack .patientsSlider .patientsBox .profileDiv span{
+    font-weight: 400;
+    font-size: 20px;
+    color: #404040;
+}
+.patientFeedBack .patientsSlider .patientsBox p{
+    font-weight: 400;
+    font-size: 16px;
+    color: #404040;
+    line-height: 27px;
+}
+/*************** Leatest - News - CSS ************/
+.leatestNew{
+    background-color: var(--whiteColor);
+    padding: 70px 0px;
+}
+.leatestNew p{
+    margin-top: 20px;
+    color: #65677B;
+    font-size: 18px;
+    font-weight: 400;
+}
+.leatestNew .multiNews{
+    margin-top: 65px !important;
+    width: 100%;
+    max-width: 95%;
+    margin: auto;
+}
+.leatestNew .multiNews .newsDiv .newsContent{
+    background: #FFFFFF;
+    box-shadow: 2px 4px 40px rgb(0 0 0 / 10%);
+    border-radius: 0px 0px 10px 10px;
+    padding: 14px 36px;
+    position: relative;
+    top: -15px;
+}
+.leatestNew .multiNews .newsDiv .imgDiv img{
+    width: 100%;
+}
+.leatestNew .multiNews .newsDiv .newsContent span{
+    font-size: 14px;
+    color: #404040;
+    font-weight: 600
+}
+.leatestNew .multiNews .newsDiv .newsContent h5{
+    margin-top: 10px;
+    font-size: 16px;
+    color: #000;
+}
+.leatestNew .multiNews .newsDiv .newsContent p{
+    color: #404040;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.leatestNew .multiNews .newsDiv .newsContent a{
+    color: var(--commonColor);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*********** Footer - CSS *********************/
+footer{
+    background-color: #0A0E31;
+    padding: 50px 30px;
+}
+footer .footer-widgets p{
+    font-size: 16px;
+    font-weight: 200;
+    color: var(--whiteColor);
+    font-family: 'Poppins', sans-serif !important;
+    margin: 24px 0px;
+}
+footer .footer-widgets .socialDiv ul{
+    padding: 0px;
+    display: flex;
+}
+footer .footer-widgets ul li{
+    margin-right: 34px;
+}
+footer .footer-widgets h4{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--whiteColor);
+    margin-bottom: 24px;
+}
+footer .footer-widgets ul{
+    padding: 0px;
+    list-style: none;
+
+}
+footer .footer-widgets ul li{
+    margin-bottom: 15px;
+}
+footer .footer-widgets ul li a{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--whiteColor);
+    opacity: 0.8;
+}
+/*********** Auth - Header - CSS ***************/
+.authHeader .navbar-collapse{
+    justify-content: flex-end;
+}
+.signUpDiv{
+    width: 100%;
+    max-width: 90%;
+    display: flex;
+    margin: 90px auto;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+.signUpDiv .leftDiv{
+    background-color: var(--commonColor);
+    width: 50%;
+    padding: 130px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signUpDiv .rightDiv{
+    width: 50%;
+    padding: 70px 45px;
+}
+.signUpDiv .rightDiv form{
+    margin-top: 40px;
+}
+.signUpDiv .rightDiv form .inputDiv{
+    margin-bottom: 20px;
+}
+.signUpDiv .rightDiv form .inputDiv input{
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid rgba(228, 228, 228, 0.9);
+    border-radius: 5px;
+    padding: 15px 20px;
+    color: rgba(45, 45, 45, 0.7);
+    font-size: 14px;
+    font-weight: 300;
+}
+.signUpDiv .rightDiv form .inputDiv label{
+    width: 100%;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+.signUpDiv .rightDiv form .forgotDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.signUpDiv .rightDiv form button{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin: 30px 0px;
+    background-color: var(--commonColor);
+    color: var(--whiteColor);
+}
+.signUpDiv .rightDiv form .multiBtn{
+    margin-top: 25px;
+}
+.signUpDiv .rightDiv form .multiBtn a{
+    border: 1px solid #C4C4C4;
+    border-radius: 4px;
+    padding: 15px 35px;
+    margin: 0px 11px;
+}
+.signUpDiv .rightDiv h4{
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+.signUpDiv .rightDiv p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #3A3737;
+    margin-bottom: 5px;
+}
+.signUpDiv .rightDiv form .keepMeSigned{
+    display: flex;
+    align-items: center;
+}
+.signUpDiv .rightDiv form .keepMeSigned input{
+    margin-right: 10px;
+}
+.signUpDiv .rightDiv form .keepMeSigned span{
+    font-size: 14px;
+    font-weight: 400;
+    color: #3A3737;
+}
+.signUpDiv .rightDiv form span a{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--commonColor)
+}
+.signUpDiv .rightDiv .socialDiv p{
+    font-size: 16px;
+}
+/*********** Contact - Us - CSS ***************/
+.commonBanner{
+    background-image: url(../img/banner.png);
+    width: 100%;
+    background-size: cover;
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.commonBanner .backDrop{
+    background: linear-gradient(90deg, rgba(0, 82, 212, 0.4) 0%, rgba(67, 100, 247, 0.4) 50%, rgba(111, 177, 252, 0) 100%);
+    position: absolute;
+    z-index: 101;
+    width: 100%;
+    height: 100%;
+}
+.commonBanner .contentBanner{
+    position: relative;
+    z-index: 99999999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0px 70px;
+}
+.commonBanner .contentBanner h4{
+    color: var(--whiteColor);
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+.commonBanner .contentBanner p{
+    font-size: 18px;
+    color: var(--whiteColor);
+    font-weight: 400;
+}
+.getInTouch{
+    padding: 70px 25px;
+    background: #F8F9FA;
+}
+.getInTouch .contactDetail .commonContactBox{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgb(0 0 0 / 20%);
+    display: flex;
+    padding: 19px 30px;
+    margin-bottom: 20px;
+}
+.getInTouch .contactDetail .commonContactBox a{
+    display: block;
+    padding: 12px 17px;
+    border-radius: 100%;
+    background: rgba(22, 120, 242, 0.15);
+    margin-right: 20px;
+}
+.getInTouch .contactDetail .commonContactBox a i{
+    font-size: 18px;
+}
+.getInTouch .contactDetail .commonContactBox .infoDiv h5{
+    font-size: 16px;
+    font-weight: 600;
+}
+.getInTouch .contactDetail .commonContactBox .infoDiv p{
+    font-weight: 400;
+    font-size: 16px;
+    color: #717F8E;
+}
+.getInTouch .contactDetail .followUs h5{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.getInTouch .contactDetail .followUs a{
+    margin-right: 18px;
+}
+.getInTouch .formDiv{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgb(0 0 0 / 20%);
+    padding: 35px 40px;
+    width: 100%;
+    max-width: 85%;
+}
+.getInTouch .formDiv h3{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.getInTouch .formDiv p{
+    font-size: 16px;
+    font-weight: 300;
+    color: #717F8E;
+}
+.getInTouch .formDiv form{
+    margin-top: 35px;
+}
+.inputDiv input,
+.inputDiv textarea,
+.inputDiv select{
+    border: 1px solid #D8D8D8;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #717F8E;
+    padding: 15px 20px;
+    width: 100%;
+    margin-bottom: 24px;
+}
+/*********** Search - Doctor - CSS ************/
+.mainSearch{
+    padding: 22px;
+    background: #F8F9FA;
+}
+.mainSearch .sortingDiv{
+    text-align: right;
+}
+.mainSearch .sortingDiv select{
+    background: #FFFFFF;
+    border: 0.5px solid #D0D0D0;
+    border-radius: 2px;
+    padding: 6px 9px;
+    color: #717F8E;
+    margin-left: 14px;
+}
+.mainSearch p.numberOfDoctor{
+    font-size: 18px;
+    font-weight: 400;
+}
+.mainSearch .search-filter{
+    margin-top: 25px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 6px rgb(0 0 0 / 25%);
+    border-radius: 6px;
+    padding: 18px 26px;
+}
+.mainSearch .search-filter h4{
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+.mainSearch .search-filter h4 img{
+    width: 16px;
+    margin-right: 12px;
+}
+.inputDiv label{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.mainSearch .search-filter .formDiv {
+    margin-top: 40px;
+}
+.mainSearch .search-filter .formDiv .inputDiv input,
+.mainSearch .search-filter .formDiv .inputDiv select{
+    padding: 10px 17px;
+    border-radius: 6px;
+    margin-bottom: 18px;
+}
+.mainSearch .search-filter .multi-gender p{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+.mainSearch .search-filter .multi-gender label{
+    font-weight: 300;
+}
+.mainSearch .search-filter .formDiv button{
+    width: 100%;
+    margin-top: 28px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.mainSearch .search-result{
+    margin-top: 25px;
+}
+.mainSearch .search-result .doctorCard{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 6px rgb(0 0 0 / 25%);
+    padding: 18px 28px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+.mainSearch .search-result .doctorCard .doctorInfo{
+    display: flex;
+}
+
+.mainSearch .search-result .doctorCard .doctorInfo .infoDiv{
+    margin-left: 17px;
+}
+.mainSearch .search-result .doctorCard .doctorInfo .infoDiv h4{
+    font-size: 18px;
+}
+.mainSearch .search-result .doctorCard .doctorInfo .infoDiv p{
+    display: flex;
+    align-items: center;
+}
+.mainSearch .search-result .doctorCard .doctorInfo .infoDiv p img{
+    margin-right: 5px;
+}
+.mainSearch .search-result .doctorCard .doctorInfo .infoDiv p,
+.mainSearch .search-result .doctorCard .doctorInfo span,
+.mainSearch .search-result .doctorCard .leatestRating p{
+    color: var(--grayColor);
+    font-size: 14px;
+    font-weight: 400;
+}
+.mainSearch .search-result .doctorCard .doctorInfo .infoDiv .specility{
+    color: var(--commonColor);
+    font-weight: 300;
+}
+.mainSearch .search-result .doctorCard .doctorInfo .infoDiv .specility img{
+    margin-right: 8px;
+}
+.mainSearch .search-result .doctorCard .doctorInfo .infoDiv .ratingDiv i{
+    color: var(--ratingColor);
+    font-size: 14px;
+}
+.mainSearch .search-result .doctorCard .leatestRating{
+    margin-top: 15px;
+}
+.mainSearch .search-result .doctorCard .leatestRating h4{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.mainSearch .feedBack .feedBackList{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.mainSearch .feedBack .feedBackList li img{
+    margin-right: 10px;
+}
+.mainSearch .feedBack .feedBackList li{
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+.mainSearch .feedBack button{
+    width: 85%;
+    position: absolute;
+    bottom: 0px;
+    right: 17px;
+    background: transparent;
+    color: #1678f2;
+    border-color: #1678f2;
+    border: 1px solid;
+    cursor: pointer;
+}
+/*********** Doctor - FeedBack - CSS **********/
+.doctor-feedBack{
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+}
+.doctor-feedBack .reviews-overview-div{
+    width: 100%;
+}
+.doctor-feedBack .reviews-overview-div{
+    background: var(--whiteColor);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+}
+.doctor-feedBack .reviews-overview-div .pills-div .nav-pills li{
+    width: 50%;
+    border-bottom: 1px solid #E7E7E7;
+}
+.doctor-feedBack .reviews-overview-div .pills-div .nav-pills li a{
+    width: 100%;
+    text-align: center;
+    padding: 8px 0px;
+    
+    display: block;
+}
+.doctor-feedBack .reviews-overview-div .pills-div .nav-pills li.active{
+    background-color: var(--commonColor);
+    border-radius: 6px 6px 0px 0px;
+    border: none;
+}
+.doctor-feedBack .reviews-overview-div .pills-div .nav-pills li a{
+    font-size: 18px;
+    color: #000;
+}
+.doctor-feedBack .reviews-overview-div .pills-div .nav-pills li.active a{
+    color: var(--whiteColor);
+    border-radius: 6px 6px 0px 0px;
+}
+.doctor-feedBack .reviews-overview-div .tab-div{
+    padding: 36px 52px;
+}
+.doctor-feedBack .reviews-overview-div .tab-div h3{
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.doctor-feedBack .reviews-overview-div .tab-div p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.doctor-feedBack .reviews-overview-div .commonList ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    position: relative;
+}
+.doctor-feedBack .reviews-overview-div .commonList ul::before{
+    content: "";
+    width: 1px;
+    height: 52%;
+    background: #CACACA;
+    position: absolute;
+    left: 4px;
+    top: 15px;
+}
+.doctor-feedBack .reviews-overview-div .commonList li{
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+.doctor-feedBack .reviews-overview-div .commonList li:before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    left: 0px;
+    border-radius: 100%;
+    background: rgba(22, 120, 242, 0.3);
+    border: 1px solid #1678F2;
+    top: 8px;
+    z-index: 9999999999;
+}
+.doctor-feedBack .reviews-overview-div .commonList li p{
+    margin-bottom: 0px;
+}
+.doctor-feedBack .reviews-overview-div .commonList li span{
+    color: #717f8e;
+    display: block;
+}
+.doctor-feedBack .reviews-overview-div .workExperience ul::before {
+    height: 70% !important;
+}
+.doctor-feedBack .reviews-overview-div .common-multi-li-div ul{
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.doctor-feedBack .reviews-overview-div .common-multi-li-div ul li{
+    background: rgba(63, 135, 247, 0.13);
+    border-radius: 6px;
+    padding: 9px 20px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.doctor-feedBack #reviews h2{
+    font-size: 24px;
+    font-weight: 600;
+}
+.doctor-feedBack #reviews span{
+    margin-right: 15px;
+}
+.doctor-feedBack #reviews span i {
+    color: var(--ratingColor);
+}
+.doctor-feedBack ul{
+    padding: 0px;
+    list-style: none;
+}
+.doctor-feedBack .rate-doctor-div ul{
+    margin-top: 25px;
+}
+.doctor-feedBack .rate-doctor-div ul li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.doctor-feedBack .rate-doctor-div ul li span{
+    display: block;
+    color: #717F8E;
+}
+.doctor-feedBack .rate-doctor-div ul li span i{
+    color: #C4C4C4 !important;
+}
+.doctor-feedBack .comment-box{
+    margin-top: 20px;
+}
+.doctor-feedBack .comment-box button{
+    font-weight: 600;
+    padding: 15px 30px;
+}
+.doctor-feedBack hr{
+    margin-top: 36px;
+    margin-bottom: 22px;
+}
+.doctor-feedBack .top-review .top-reveiw-slider .reviewBox{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 9px rgb(0 0 0 / 10%);
+    border-radius: 4px;
+    padding: 26px 18px;
+    margin: 5px 14px;
+}
+.doctor-feedBack .top-review .top-reveiw-slider .reviewBox .infoDiv{
+    display: flex;
+    align-items: flex-start;
+}
+.doctor-feedBack .top-review .top-reveiw-slider .reviewBox .infoDiv .contentDiv{
+    margin-left: 22px;
+}
+.doctor-feedBack .top-review .top-reveiw-slider .reviewBox .infoDiv .contentDiv h4{
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.doctor-feedBack .top-review .top-reveiw-slider .reviewBox .infoDiv .contentDiv p{
+    font-size: 14px;
+    font-weight: 400;
+}
+.doctor-feedBack .top-review .top-reveiw-slider .slick-dots{
+    bottom: -50px;
+}
+.doctor-feedBack .multi-review .patientBox .contentDiv{
+    margin-left: 32px;
+}
+.doctor-feedBack .multi-review .patientBox{
+    display: flex;
+    align-items: flex-start;
+}
+.doctor-feedBack .multi-review .patientBox ul{
+    display: flex;
+}
+.doctor-feedBack .multi-review .patientBox ul li{
+    margin-right: 32px;
+}
+.doctor-feedBack .multi-review .patientBox .contentDiv h3{
+    margin-bottom: 6px;
+}
+.doctor-feedBack .multi-review .patientBox .contentDiv span{
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 11px;
+}
+.doctor-feedBack .multi-review .patientBox .contentDiv p.recommended-text{
+    color: #3CB44A;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 11px;
+    display: flex;
+    align-items: center;
+}
+.doctor-feedBack .multi-review .patientBox .contentDiv p.recommended-text img{
+    margin-right: 14px;
+}
+.doctor-feedBack .multi-review .patientBox .contentDiv ul li p{
+    color: #717F8E;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+.doctor-feedBack .multi-review .patientBox .contentDiv ul li p i{
+    color: var(--ratingColor);
+}
+.doctor-feedBack .multi-review .patientBox .contentDiv p,
+.doctor-feedBack .multi-review .patientBox .overall p{
+    color: #717F8E;
+    font-size: 14px;
+    font-weight: 400;
+}
+.doctor-feedBack .multi-review .patientBox .overall {
+    width: 30%;
+    text-align: center;
+}
+.doctor-feedBack .multi-review .patientBox .overall span{
+    margin: 0px !important;
+}
+.patientReview{
+    margin-top: 100px;
+}
+
+/* component */
+
+.rating { 
+  border: none;
+  float: left;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin-top: 2px;
+  padding:0px 5px 0px 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+    color: #ff !important; 
+    float: right;
+    /*margin:4px 1px 0px 0px;*/
+    /*background-color:#D8D8D8;*/
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { 
+   /* background-color:#7ED321 !important;*/
+  cursor:pointer;
+  color:orange;
+} /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { 
+   /* background-color:#7ED321 !important;*/
+  cursor:pointer;
+  color:yellow;
+} 
+
+/*********** Media - Query - CSS **************/
+@media screen and (max-width: 1300px) {
+    .getInTouch .contactDetail .commonContactBox{
+        padding: 19px 15px;
+    }
+    .getInTouch .contactDetail .commonContactBox a i {
+        font-size: 14px;
+    }
+    .getInTouch .contactDetail .commonContactBox a{
+        padding: 10px 17px;
+        margin-right: 10px;
+    }
+    .awardDiv .multiAward .awardBox img {
+        margin-right: 15px;
+    }
+    .awardDiv .multiAward .awardBox h5 {
+        font-size: 30px;
+    }
+    .awardDiv .multiAward .awardBox p {
+        font-size: 12px;
+    }
+    header {
+        padding: 0px 20px;
+    }
+    header .authBtnDiv a{
+        padding: 10px;
+        font-size: 14px;
+    }
+    header .navbar-nav li a {
+        font-size: 14px;
+    }
+    .topReatedDoctor .multiDoctorDiv .doctorCard img {
+        left: 37%;
+    }    
+    .medicalExpert .medicalRightDiv {
+        padding: 70px 20px;
+    }
+}
+@media screen and (max-width: 1250px) {
+    header .navbar-nav li {
+        margin-right: 25px;
+    }
+
+    header .navbar-nav li a,
+    header .authBtnDiv a {
+        font-size: 14px;
+    }
+
+    header .authBtnDiv a {
+        padding: 10px 20px;
+    }
+
+    header .navbar-nav {
+        margin-left: 30px;
+    }
+
+    header .authBtnDiv a {
+        margin-left: 15px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .topSpecialities .multiSpecialities .commonBox p,
+    .patientFeedBack .patientsSlider .patientsBox .profileDiv h4{
+        font-size: 16px;
+    }
+    .topSpecialities .multiSpecialities .commonBox .imgBox{
+        width: 100px;
+        height: 100px;
+    }
+    .topSpecialities .multiSpecialities .commonBox .imgBox img{
+        width: 40px;
+        height: 40px;
+    }
+    .patientFeedBack .patientsSlider .patientsBox .profileDetail {
+        margin-left: 15px;
+    }
+    .patientFeedBack .patientsSlider .patientsBox{
+        padding: 50px 10px;
+    }
+    .topReatedDoctor .multiDoctorDiv .doctorCard .cardBody .doctorDetail p,
+    .patientFeedBack .patientsSlider .patientsBox .profileDiv span,
+    .leatestNew .multiNews .newsDiv .newsContent h5,
+    .getInTouch .contactDetail .commonContactBox .infoDiv h5{
+        font-size: 14px;
+    }
+    .topReatedDoctor .multiDoctorDiv .doctorCard .cardBody .doctorSpecialities p,
+    .topReatedDoctor .multiDoctorDiv .doctorCard .cardBody .doctorSpecialities p span,
+    .leatestNew .multiNews .newsDiv .newsContent a,
+    .leatestNew .multiNews .newsDiv .newsContent p,
+    .getInTouch .contactDetail .commonContactBox .infoDiv p,
+    .mainSearch .search-filter .multi-gender label{
+        font-size: 12px;
+    }
+    .mainSearch .search-filter{
+        padding: 18px 10px;
+    }
+    .mainSearch .feedBack button{
+        padding: 10px 18px;
+        font-size: 12px;
+        bottom: 10px;
+    }
+}
+@media screen and (max-width: 1070px) {
+    .topReatedDoctor .multiDoctorDiv .doctorCard{
+        padding: 70px 10px 20px;
+    }
+    header .navbar-nav {
+        margin-left: 0px;
+    }
+    header {
+        padding: 0px 0px;
+    }
+    .mainHeroSection .bannerLeftDiv h1{
+        font-size: 48px;
+    }
+    .mainHeroSection .bannerLeftDiv h4{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .doctor-feedBack .multi-review .patientBox{
+        display: block;
+    }
+    .doctor-feedBack .multi-review .patientBox .overall{
+        width: auto;
+        text-align: left;
+    }
+    .doctor-feedBack .multi-review .patientBox .contentDiv{
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+    .mainSearch .search-result .doctorCard .doctorInfo img.doctor-img{
+        width: 100%;
+        height: 100%;
+    }
+    .mainSearch .feedBack button{
+        position: initial;
+        width: 100%;
+    }
+    .getInTouch .formDiv {
+        max-width: 100%;
+        margin-top: 50px;
+    }
+    .leatestNew .multiNews .newsDiv{
+        width: 100%;
+        max-width: 50%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .medicalExpert .imgDiv .qualityOurQuantity{
+        right: 0px;
+    }
+    .signUpDiv .rightDiv form span a,
+    .signUpDiv .rightDiv form .keepMeSigned span,
+    .signUpDiv .rightDiv p{
+        font-size: 12px;
+    }
+    .medicalExpert .medicalRightDiv {
+        text-align: center;
+    }
+    .awardDiv .multiAward .awardBox img {
+        width: 40px;
+    }
+    .awardDiv .multiAward .awardBox h5 {
+        font-size: 20px;
+    }    
+    .topReatedDoctor .multiDoctorDiv .doctorCard img {
+        left: 44%;
+    }
+    .topSpecialities{
+        padding: 0px;
+    }
+    .topSpecialities .multiSpecialities{
+        max-width: 100%;
+    }
+    .mainHeroSection .searchDiv {
+        max-width: 100%;
+        margin-left: 0px;
+        position: initial;
+    }
+    .mainHeroSection .bannerLeftDiv {
+        padding: 100px 30px;
+        text-align: center;
+    }
+    #navbarSupportedContent{
+        padding: 20px;
+    }
+    header .authBtnDiv {
+        display: block;
+    }
+
+    header .navbar-nav,
+    header .navbar-nav li {
+        margin: 0px;
+    }
+
+    header .authBtnDiv a {
+        margin: 10px 0px;
+        text-align: center;
+    }
+    .mainHeroSection .bannerRightDiv {
+        padding: 0px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .medicalExpert .medicalRightDiv h3 {
+        font-size: 24px;
+        line-height: 35px;
+    }
+    
+    
+    .mainHeroSection .bannerLeftDiv h1 {
+        font-size: 40px;
+    }    
+    .commonTitle{
+        font-size: 24px;
+    }
+    .mainSearch .search-result .doctorCard .doctorInfo{
+        display: block;
+        text-align: center;
+    }
+    .mainSearch .search-result .doctorCard .doctorInfo img.doctor-img{
+        border-radius: 100%;
+        width: 50%;
+    }
+    .mainSearch .search-result .doctorCard .leatestRating,
+    .mainSearch .feedBack .feedBackList li{
+        text-align: center;
+    }
+    .mainSearch .feedBack .feedBackList{
+        margin: 20px 0px;
+    }
+    .mainSearch .search-result .doctorCard .doctorInfo .infoDiv p{
+        justify-content: center;
+    }
+    .mainSearch .search-result .doctorCard .doctorInfo .infoDiv{
+        margin: 20px 0px !important;
+    }
+    .doctor-feedBack .top-review .top-reveiw-slider .reviewBox{
+        margin: 5px;
+    }
+    .doctor-feedBack #reviews span,
+    .doctor-feedBack .reviews-overview-div .tab-div p{
+        font-size: 14px;
+    }
+    .doctor-feedBack #reviews h2{
+        font-size: 18px;
+    }
+    .doctor-feedBack .reviews-overview-div .tab-div{
+        padding: 20px;
+    }
+    .signUpDiv .leftDiv{
+        display: none;
+    }
+    .signUpDiv .rightDiv{
+        width: 100%;
+        padding: 70px 20px;
+    }
+    .leatestNew .multiNews .newsDiv{
+        max-width: 100%;
+    }
+    .topSpecialities .multiSpecialities,
+    .tabDiv .findDoctorBox,
+    .awardDiv .multiAward{
+        display: block !important;
+    }
+    .mainHeroSection .bannerLeftDiv {
+        padding: 50px 0px;
+        text-align: center;
+    }
+    .awardDiv .multiAward .awardBox{
+        width: 100%;
+       display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .awardDiv .multiAward .awardBox img{
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+    .topSpecialities .multiSpecialities .commonBox {
+        margin: auto;
+        margin-bottom: 20px;
+        width: 100%;
+    }    
+    .tabDiv .findDoctorBox .inputDiv,
+    .tabDiv .findDoctorBox .inputDiv input, .tabDiv .findDoctorBox .inputDiv select{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .mainHeroSection{
+        padding: 150px 50px;
+    }
+    .pillsDiv li{
+        width: 100%;
+    }
+    .signUpDiv .rightDiv form .inputDiv label{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 580px) {
+    .doctor-feedBack .multi-review .patientBox ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .commonBanner .contentBanner{
+        padding: 0px 20px;
+    }
+    .commonBanner .contentBanner h4{
+        font-size: 26px;
+    }
+    .commonBanner .contentBanner p,
+    .mainSearch p.numberOfDoctor{
+        font-size: 14px;
+    }
+    .mainSearch .sortingDiv{
+        text-align: left;
+        margin-top: 20px;
+    }
+    .getInTouch .formDiv{
+        padding: 35px 20px;
+    }
+    .signUpDiv{
+        margin: 50px 0px;
+    }
+    .topReatedDoctor .multiDoctorDiv .doctorCard img {
+        left: 36%;
+    }
+    .container-fluid {
+        padding: 0px 0px;
+    }
+    .pillsDiv .nav-pills li a{
+        padding: 10px;
+    }
+}
